@@ -1,0 +1,118 @@
+site_name: Sophon Airbox Generative AI Lab
+site_url: 
+
+edit_uri: ''
+theme:
+  name: "material"
+  custom_dir: docs/overrides
+  favicon: images/sophgo.png
+  logo: images/sophgo.png
+  font: Incosolata
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: playful-purple
+
+  features:
+      # - navigation.indexes
+      - navigation.expand
+      - navigation.tabs
+      - navigation.tabs.sticky
+      # - navigation.sections
+      - navigation.top
+      - content.tabs.link
+      - content.code.copy
+      
+plugins:
+  - search
+
+  
+use_directory_urls: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+  - md_in_html
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - meta
+  - footnotes
+
+extra_css:
+  - css/colors.css
+  - css/extra.css
+
+nav:
+  - Home: index.md
+  - Tutorials:
+    # - About NVIDIA Jetson: tutorial-intro.md
+    # - Text (LLM):
+    #   - text-generation-webui: tutorial_text-generation.md 
+    # # - LLM + ASR/TTS:
+    # #   - LlamaSpeak: tutorial_llamaspeak.md
+    # - Text + Vision (VLM):
+    #   - Mini-GPT4: tutorial_minigpt4.md
+    #   - LLaVA: tutorial_llava.md
+    #   # - NeVA: tutorial_NeVA.md
+    # - Image Generation:
+    #   - Stable Diffusion: tutorial_stable-diffusion.md
+    #   - Stable Diffusion XL: tutorial_stable-diffusion-xl.md
+    # - Vision Transformers (ViT):
+    #   - SAM: tutorial_sam.md
+    #   - NanoSAM: tutorial_nanosam.md
+    #   - NanoOWL: tutorial_nanoowl.md
+    #   - TAM: tutorial_tam.md
+    # # - NanoOWL: tutorial_nanoowl.md
+    # - Vector Database:
+    #   - NanoDB: tutorial_nanodb.md
+    # # - Tools:
+    # #   - LangChain: tutorial_distillation.md
+    # - Tips:
+    #   - 📑 Knowledge Distillation: tutorial_distillation.md
+    #   - 🔖 SSD + Docker: tips_ssd-docker.md
+    #   - 🔖 Memory optimization: tips_ram-optimization.md
+    - 开始: airbox/index.md
+    - 准备: airbox/准备.md
+    - AirBox连接方式: airbox/AirBox连接方式.md 
+    - 虚拟环境使用: airbox/虚拟环境使用.md 
+
+    - 大模型应用:
+      - ChatBot安装: airbox/大模型应用/ChatBot安装.md
+      - ChatBot操作说明: airbox/大模型应用/ChatBot操作说明.md
+      - ChatDoc安装: airbox/大模型应用/ChatDoc安装.md
+      - ChatDoc操作说明: airbox/大模型应用/ChatDoc操作说明.md
+      - ChatDoc API使用说明: airbox/大模型应用/ChatDoc API使用说明.md
+      - 教育应用demo: airbox/大模型应用/教育应用demo.md
+      - 模型调用详情: airbox/大模型应用/模型调用详情.md
+
+    - AI绘画应用:
+      - SD v15安装启动: airbox/AI绘画应用/SD v15安装启动.md
+
+    - 智能语音应用:
+      - 语音摘要: airbox/智能语音应用/语音摘要.md
+  - Benchmarks: benchmarks.md
+  - Try: try.md
+
+# extra:
+#   generator: false
+#   analytics:
+#     provider: google
+#     property: G-SXH8S4Y8RW
+  
