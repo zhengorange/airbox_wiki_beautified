@@ -108,6 +108,7 @@ nav:
     - 智能语音应用:
       - 语音摘要: airbox/智能语音应用/语音摘要.md
   - Benchmarks: benchmarks.md
+  - Blog: community_articles.md
   - Try: try.md
 
 # extra:
